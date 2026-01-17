@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.1 on linux)" generated="2026-01-17T10:19:05.236203" rpa="false" schemaversion="5">
+<suite id="s1" name="External Tools Demo" source="/workspaces/OpenRobo-Web-Framework/tests/external_tools/external_tools_demo.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-01-17T10:19:05.424117" level="INFO">Starting External Tools Testing Suite</msg>
+<arg>Starting External Tools Testing Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.423815" elapsed="0.000390"/>
+</kw>
+<test id="s1-t1" name="Test iPerf Network Speed Test" line="15">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:05.425040" level="INFO">Testing iPerf network speed measurement</msg>
+<arg>Testing iPerf network speed measurement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.424798" elapsed="0.000294"/>
+</kw>
+<kw name="Run Network Speed Test With iPerf" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:05.426023" level="INFO">Starting iPerf speed test against 192.168.1.1:5201</msg>
+<arg>Starting iPerf speed test against ${server}:${port}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.425781" elapsed="0.000285"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:05.426419" level="INFO">Test duration: 10s, Direction: send</msg>
+<arg>Test duration: ${duration}s, Direction: ${direction}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.426186" elapsed="0.000273"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:05.427021" level="INFO">${result} = {'bandwidth_mbps': '95.5', 'jitter_ms': '2.3', 'packet_loss_percent': '0.1', 'duration_seconds': '10', 'test_type': 'send'}</msg>
+<var>${result}</var>
+<arg>bandwidth_mbps=95.5</arg>
+<arg>jitter_ms=2.3</arg>
+<arg>packet_loss_percent=0.1</arg>
+<arg>duration_seconds=${duration}</arg>
+<arg>test_type=${direction}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.426570" elapsed="0.000480"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2026-01-17T10:19:05.427118" elapsed="0.000083"/>
+</return>
+<msg time="2026-01-17T10:19:05.427385" level="INFO">${result} = {'bandwidth_mbps': '95.5', 'jitter_ms': '2.3', 'packet_loss_percent': '0.1', 'duration_seconds': '10', 'test_type': 'send'}</msg>
+<var>${result}</var>
+<arg>192.168.1.1</arg>
+<arg>5201</arg>
+<arg>10</arg>
+<arg>send</arg>
+<tag>external-tools</tag>
+<tag>iperf</tag>
+<tag>network-speed</tag>
+<doc>Run iPerf network speed test</doc>
+<status status="PASS" start="2026-01-17T10:19:05.425440" elapsed="0.001994"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:05.428057" level="INFO">Length is 5.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.427654" elapsed="0.000448"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>bandwidth_mbps</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:05.428307" elapsed="0.000191"/>
+</kw>
+<msg time="2026-01-17T10:19:05.436374" level="INFO">Starting Browser process /home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js using port 54215</msg>
+<msg time="2026-01-17T10:19:05.436456" level="INFO">Node startup parameters: ['node', '/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js', '54215']</msg>
+<doc>Run iPerf network speed test</doc>
+<tag>external-tools</tag>
+<tag>iperf</tag>
+<tag>smoke</tag>
+<tag>speed-test</tag>
+<status status="PASS" start="2026-01-17T10:19:05.424346" elapsed="0.004331"/>
+</test>
+<test id="s1-t2" name="Test Ping Connectivity" line="24">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.009448" level="INFO">Testing ping connectivity</msg>
+<arg>Testing ping connectivity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.009158" elapsed="0.000344"/>
+</kw>
+<kw name="Run Ping Test" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.010421" level="INFO">Pinging 8.8.8.8 with 4 packets</msg>
+<arg>Pinging ${target} with ${count} packets</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.010084" elapsed="0.000385"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.011044" level="INFO">${ping_stats} = {'target': '8.8.8.8', 'packets_sent': '4', 'packets_received': '4', 'packet_loss_percent': '0', 'min_time_ms': '15.2', 'avg_time_ms': '18.5', 'max_time_ms': '22.1', 'stddev_ms': '2.1'}</msg>
+<var>${ping_stats}</var>
+<arg>target=${target}</arg>
+<arg>packets_sent=${count}</arg>
+<arg>packets_received=${count}</arg>
+<arg>packet_loss_percent=0</arg>
+<arg>min_time_ms=15.2</arg>
+<arg>avg_time_ms=18.5</arg>
+<arg>max_time_ms=22.1</arg>
+<arg>stddev_ms=2.1</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.010591" elapsed="0.000483"/>
+</kw>
+<return>
+<value>${ping_stats}</value>
+<status status="PASS" start="2026-01-17T10:19:06.011174" elapsed="0.000067"/>
+</return>
+<msg time="2026-01-17T10:19:06.011450" level="INFO">${result} = {'target': '8.8.8.8', 'packets_sent': '4', 'packets_received': '4', 'packet_loss_percent': '0', 'min_time_ms': '15.2', 'avg_time_ms': '18.5', 'max_time_ms': '22.1', 'stddev_ms': '2.1'}</msg>
+<var>${result}</var>
+<arg>8.8.8.8</arg>
+<arg>4</arg>
+<arg>10</arg>
+<tag>connectivity</tag>
+<tag>external-tools</tag>
+<tag>ping</tag>
+<doc>Execute ping test to target host</doc>
+<status status="PASS" start="2026-01-17T10:19:06.009776" elapsed="0.001715"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.011976" level="INFO">Length is 8.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.011714" elapsed="0.000305"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>packet_loss_percent</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.012209" elapsed="0.000163"/>
+</kw>
+<doc>Test ping connectivity to host</doc>
+<tag>connectivity</tag>
+<tag>external-tools</tag>
+<tag>ping</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T10:19:06.006609" elapsed="0.005946"/>
+</test>
+<test id="s1-t3" name="Test Traceroute Analysis" line="33">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.022672" level="INFO">Testing traceroute to destination</msg>
+<arg>Testing traceroute to destination</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.022328" elapsed="0.000414"/>
+</kw>
+<kw name="Run Traceroute Test" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.024203" level="INFO">Running traceroute to 8.8.8.8 (max hops: 30)</msg>
+<arg>Running traceroute to ${target} (max hops: ${max_hops})</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.023810" elapsed="0.000467"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.024739" level="INFO">${hops} = ['1|localhost (192.168.1.1)|0.5ms', '2|gateway.isp.com (10.0.0.1)|5.2ms', '3|core-router-1 (203.0.113.1)|12.3ms', '4|8.8.8.8|25.1ms']</msg>
+<var>${hops}</var>
+<arg>1|localhost (192.168.1.1)|0.5ms</arg>
+<arg>2|gateway.isp.com (10.0.0.1)|5.2ms</arg>
+<arg>3|core-router-1 (203.0.113.1)|12.3ms</arg>
+<arg>4|${target}|25.1ms</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.024401" elapsed="0.000381"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.026034" level="INFO">${traceroute_result} = {'target': '8.8.8.8', 'hops_count': '4', 'hops': ['1|localhost (192.168.1.1)|0.5ms', '2|gateway.isp.com (10.0.0.1)|5.2ms', '3|core-router-1 (203.0.113.1)|12.3ms', '4|8.8.8.8|25.1ms'], 'completed': 'tr...</msg>
+<var>${traceroute_result}</var>
+<arg>target=${target}</arg>
+<arg>hops_count=4</arg>
+<arg>hops=${hops}</arg>
+<arg>completed=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.025454" elapsed="0.000627"/>
+</kw>
+<return>
+<value>${traceroute_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.026196" elapsed="0.000131"/>
+</return>
+<msg time="2026-01-17T10:19:06.026605" level="INFO">${result} = {'target': '8.8.8.8', 'hops_count': '4', 'hops': ['1|localhost (192.168.1.1)|0.5ms', '2|gateway.isp.com (10.0.0.1)|5.2ms', '3|core-router-1 (203.0.113.1)|12.3ms', '4|8.8.8.8|25.1ms'], 'completed': 'tr...</msg>
+<var>${result}</var>
+<arg>8.8.8.8</arg>
+<arg>30</arg>
+<tag>external-tools</tag>
+<tag>routing</tag>
+<tag>traceroute</tag>
+<doc>Execute traceroute to target host</doc>
+<status status="PASS" start="2026-01-17T10:19:06.023528" elapsed="0.003118"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.027266" level="INFO">Length is 4.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.026870" elapsed="0.000470"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>hops</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.027567" elapsed="0.000229"/>
+</kw>
+<doc>Test traceroute path analysis</doc>
+<tag>external-tools</tag>
+<tag>routing</tag>
+<tag>traceroute</tag>
+<status status="PASS" start="2026-01-17T10:19:06.019340" elapsed="0.008732"/>
+</test>
+<test id="s1-t4" name="Test DNS Lookup" line="42">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.038741" level="INFO">Testing DNS lookup</msg>
+<arg>Testing DNS lookup</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.038494" elapsed="0.000299"/>
+</kw>
+<kw name="Run DNS Lookup" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.039574" level="INFO">Resolving example.com</msg>
+<arg>Resolving ${hostname}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.039349" elapsed="0.000269"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.040622" level="INFO">${dns_result} = {'hostname': 'example.com', 'ip_addresses': ['93.184.216.34'], 'query_time_ms': '25.5', 'resolver': '8.8.8.8', 'ttl': '86400'}</msg>
+<var>${dns_result}</var>
+<arg>hostname=${hostname}</arg>
+<arg>ip_addresses=${{ ["93.184.216.34"] }}</arg>
+<arg>query_time_ms=25.5</arg>
+<arg>resolver=8.8.8.8</arg>
+<arg>ttl=86400</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.039729" elapsed="0.000925"/>
+</kw>
+<return>
+<value>${dns_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.040723" elapsed="0.000048"/>
+</return>
+<msg time="2026-01-17T10:19:06.040908" level="INFO">${result} = {'hostname': 'example.com', 'ip_addresses': ['93.184.216.34'], 'query_time_ms': '25.5', 'resolver': '8.8.8.8', 'ttl': '86400'}</msg>
+<var>${result}</var>
+<arg>example.com</arg>
+<tag>dns</tag>
+<tag>external-tools</tag>
+<tag>resolution</tag>
+<doc>Perform DNS resolution with details</doc>
+<status status="PASS" start="2026-01-17T10:19:06.039080" elapsed="0.001855"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.041429" level="INFO">Length is 5.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.041171" elapsed="0.000325"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>ip_addresses</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.041814" elapsed="0.000519"/>
+</kw>
+<doc>Test DNS resolution</doc>
+<tag>dns</tag>
+<tag>external-tools</tag>
+<tag>resolution</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T10:19:06.035103" elapsed="0.007605"/>
+</test>
+<test id="s1-t5" name="Test Network Interface Statistics" line="51">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.051009" level="INFO">Testing network interface stats</msg>
+<arg>Testing network interface stats</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.050786" elapsed="0.000271"/>
+</kw>
+<kw name="Run Network Interface Statistics" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.051787" level="INFO">Gathering network interface statistics</msg>
+<arg>Gathering network interface statistics</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.051598" elapsed="0.000233"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.053017" level="INFO">${interfaces} = {'eth0': {'packets_sent': 1250000, 'packets_recv': 1180000, 'errors': 0, 'dropped': 2}, 'eth1': {'packets_sent': 850000, 'packets_recv': 925000, 'errors': 0, 'dropped': 1}}</msg>
+<var>${interfaces}</var>
+<arg>eth0=${{ {"packets_sent": 1250000, "packets_recv": 1180000, "errors": 0, "dropped": 2} }}</arg>
+<arg>eth1=${{ {"packets_sent": 850000, "packets_recv": 925000, "errors": 0, "dropped": 1} }}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.051942" elapsed="0.001107"/>
+</kw>
+<return>
+<value>${interfaces}</value>
+<status status="PASS" start="2026-01-17T10:19:06.053112" elapsed="0.000075"/>
+</return>
+<msg time="2026-01-17T10:19:06.053324" level="INFO">${result} = {'eth0': {'packets_sent': 1250000, 'packets_recv': 1180000, 'errors': 0, 'dropped': 2}, 'eth1': {'packets_sent': 850000, 'packets_recv': 925000, 'errors': 0, 'dropped': 1}}</msg>
+<var>${result}</var>
+<arg>eth0</arg>
+<tag>external-tools</tag>
+<tag>interfaces</tag>
+<tag>network-stats</tag>
+<doc>Get network interface statistics using ifconfig or ipconfig</doc>
+<status status="PASS" start="2026-01-17T10:19:06.051343" elapsed="0.002008"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.054064" level="INFO">Length is 2.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.053609" elapsed="0.000554"/>
+</kw>
+<doc>Get network interface statistics</doc>
+<tag>external-tools</tag>
+<tag>ifconfig</tag>
+<tag>statistics</tag>
+<status status="PASS" start="2026-01-17T10:19:06.047797" elapsed="0.006575"/>
+</test>
+<test id="s1-t6" name="Test Netstat Connection Analysis" line="59">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.062376" level="INFO">Testing netstat analysis</msg>
+<arg>Testing netstat analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.062022" elapsed="0.000635"/>
+</kw>
+<kw name="Run Netstat Analysis" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.063992" level="INFO">Running netstat analysis</msg>
+<arg>Running netstat analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.063800" elapsed="0.000235"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.064594" level="INFO">Filter: , Sort by: port</msg>
+<arg>Filter: ${filter}, Sort by: ${sort_by}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.064166" elapsed="0.000506"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.065693" level="INFO">${connections} = ['TCP|ESTABLISHED|localhost:54321|93.184.216.34:443|25.3ms', 'TCP|ESTABLISHED|localhost:54322|93.184.216.35:80|18.1ms', 'TCP|TIME_WAIT|localhost:54323|93.184.216.34:443|0.5ms', 'UDP|NONE|localhost:530...</msg>
+<var>${connections}</var>
+<arg>TCP|ESTABLISHED|localhost:54321|93.184.216.34:443|25.3ms</arg>
+<arg>TCP|ESTABLISHED|localhost:54322|93.184.216.35:80|18.1ms</arg>
+<arg>TCP|TIME_WAIT|localhost:54323|93.184.216.34:443|0.5ms</arg>
+<arg>UDP|NONE|localhost:53000|8.8.8.8:53|5.2ms</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.065251" elapsed="0.000491"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.066546" level="INFO">${netstat_result} = {'total_connections': '4', 'established': '2', 'time_wait': '1', 'udp': '1', 'connections': ['TCP|ESTABLISHED|localhost:54321|93.184.216.34:443|25.3ms', 'TCP|ESTABLISHED|localhost:54322|93.184.216.35:...</msg>
+<var>${netstat_result}</var>
+<arg>total_connections=4</arg>
+<arg>established=2</arg>
+<arg>time_wait=1</arg>
+<arg>udp=1</arg>
+<arg>connections=${connections}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.065936" elapsed="0.000652"/>
+</kw>
+<return>
+<value>${netstat_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.066676" elapsed="0.000059"/>
+</return>
+<msg time="2026-01-17T10:19:06.066874" level="INFO">${result} = {'total_connections': '4', 'established': '2', 'time_wait': '1', 'udp': '1', 'connections': ['TCP|ESTABLISHED|localhost:54321|93.184.216.34:443|25.3ms', 'TCP|ESTABLISHED|localhost:54322|93.184.216.35:...</msg>
+<var>${result}</var>
+<arg>${EMPTY}</arg>
+<arg>port</arg>
+<tag>connections</tag>
+<tag>external-tools</tag>
+<tag>netstat</tag>
+<doc>Analyze network connections using netstat</doc>
+<status status="PASS" start="2026-01-17T10:19:06.063202" elapsed="0.003699"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.067361" level="INFO">Length is 5.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.067087" elapsed="0.000318"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>total_connections</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.067579" elapsed="0.000151"/>
+</kw>
+<doc>Analyze network connections with netstat</doc>
+<tag>advanced</tag>
+<tag>connections</tag>
+<tag>external-tools</tag>
+<tag>netstat</tag>
+<status status="PASS" start="2026-01-17T10:19:06.059326" elapsed="0.008566"/>
+</test>
+<test id="s1-t7" name="Test HTTP Request With Curl" line="68">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.074393" level="INFO">Testing curl HTTP request</msg>
+<arg>Testing curl HTTP request</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.073981" elapsed="0.000500"/>
+</kw>
+<kw name="Run HTTP Request With Curl" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.075609" level="INFO">Executing curl request to https://httpbin.org/get</msg>
+<arg>Executing curl request to ${url}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.075263" elapsed="0.000442"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.076201" level="INFO">Method: GET, Timeout: 30s</msg>
+<arg>Method: ${method}, Timeout: ${timeout}s</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.075859" elapsed="0.000411"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.077067" level="INFO">${curl_metrics} = {'url': 'https://httpbin.org/get', 'method': 'GET', 'http_code': '200', 'connect_time_ms': '45.3', 'total_time_ms': '125.7', 'size_download_bytes': '2048', 'speed_download_kbps': '16.3', 'redirect_cou...</msg>
+<var>${curl_metrics}</var>
+<arg>url=${url}</arg>
+<arg>method=${method}</arg>
+<arg>http_code=200</arg>
+<arg>connect_time_ms=45.3</arg>
+<arg>total_time_ms=125.7</arg>
+<arg>size_download_bytes=2048</arg>
+<arg>speed_download_kbps=16.3</arg>
+<arg>redirect_count=0</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.076434" elapsed="0.000680"/>
+</kw>
+<return>
+<value>${curl_metrics}</value>
+<status status="PASS" start="2026-01-17T10:19:06.077246" elapsed="0.000062"/>
+</return>
+<msg time="2026-01-17T10:19:06.077515" level="INFO">${result} = {'url': 'https://httpbin.org/get', 'method': 'GET', 'http_code': '200', 'connect_time_ms': '45.3', 'total_time_ms': '125.7', 'size_download_bytes': '2048', 'speed_download_kbps': '16.3', 'redirect_cou...</msg>
+<var>${result}</var>
+<arg>https://httpbin.org/get</arg>
+<arg>GET</arg>
+<arg>30</arg>
+<tag>curl</tag>
+<tag>external-tools</tag>
+<tag>http</tag>
+<doc>Execute HTTP request using curl with detailed metrics</doc>
+<status status="PASS" start="2026-01-17T10:19:06.074822" elapsed="0.002736"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.078179" level="INFO">Length is 8.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.077776" elapsed="0.000464"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>http_code</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.078435" elapsed="0.000224"/>
+</kw>
+<doc>Execute HTTP request with curl</doc>
+<tag>api</tag>
+<tag>curl</tag>
+<tag>external-tools</tag>
+<tag>http</tag>
+<status status="PASS" start="2026-01-17T10:19:06.071494" elapsed="0.007367"/>
+</test>
+<test id="s1-t8" name="Test Load Testing With Apache Bench" line="77">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.087035" level="INFO">Testing Apache Bench load test</msg>
+<arg>Testing Apache Bench load test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.086717" elapsed="0.000388"/>
+</kw>
+<kw name="Run Load Testing With Apache Bench" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.088221" level="INFO">Running Apache Bench load test</msg>
+<arg>Running Apache Bench load test</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.087907" elapsed="0.000378"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.088781" level="INFO">Concurrent: 10, Total: 100</msg>
+<arg>Concurrent: ${concurrent_requests}, Total: ${total_requests}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.088435" elapsed="0.000414"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.089782" level="INFO">${ab_results} = {'url': 'https://www.amazon.com', 'total_requests': '100', 'concurrent_requests': '10', 'requests_per_second': '125.5', 'mean_time_ms': '79.8', 'min_time_ms': '15.2', 'max_time_ms': '245.3', 'failed_r...</msg>
+<var>${ab_results}</var>
+<arg>url=${url}</arg>
+<arg>total_requests=${total_requests}</arg>
+<arg>concurrent_requests=${concurrent_requests}</arg>
+<arg>requests_per_second=125.5</arg>
+<arg>mean_time_ms=79.8</arg>
+<arg>min_time_ms=15.2</arg>
+<arg>max_time_ms=245.3</arg>
+<arg>failed_requests=0</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.089030" elapsed="0.000801"/>
+</kw>
+<return>
+<value>${ab_results}</value>
+<status status="PASS" start="2026-01-17T10:19:06.089933" elapsed="0.000059"/>
+</return>
+<msg time="2026-01-17T10:19:06.090215" level="INFO">${result} = {'url': 'https://www.amazon.com', 'total_requests': '100', 'concurrent_requests': '10', 'requests_per_second': '125.5', 'mean_time_ms': '79.8', 'min_time_ms': '15.2', 'max_time_ms': '245.3', 'failed_r...</msg>
+<var>${result}</var>
+<arg>${BASE_URL}</arg>
+<arg>10</arg>
+<arg>100</arg>
+<tag>ab</tag>
+<tag>external-tools</tag>
+<tag>load-testing</tag>
+<doc>Run load testing using Apache Bench (ab)</doc>
+<status status="PASS" start="2026-01-17T10:19:06.087450" elapsed="0.002949"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.091014" level="INFO">Length is 8.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.090639" elapsed="0.000473"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>requests_per_second</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.091353" elapsed="0.000293"/>
+</kw>
+<doc>Run load test with Apache Bench</doc>
+<tag>advanced</tag>
+<tag>apache-bench</tag>
+<tag>external-tools</tag>
+<tag>load-testing</tag>
+<status status="PASS" start="2026-01-17T10:19:06.083784" elapsed="0.008135"/>
+</test>
+<test id="s1-t9" name="Test Bandwidth Speedtest" line="86">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.100489" level="INFO">Testing speedtest bandwidth measurement</msg>
+<arg>Testing speedtest bandwidth measurement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.100169" elapsed="0.000394"/>
+</kw>
+<kw name="Run Bandwidth Test With Speedtest" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.101932" level="INFO">Running Speedtest</msg>
+<arg>Running Speedtest</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.101682" elapsed="0.000296"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.102457" level="INFO">${speedtest_result} = {'download_mbps': '125.45', 'upload_mbps': '45.23', 'ping_ms': '18.5', 'isp': 'Example ISP', 'server': 'Test Server', 'timestamp': ' '}</msg>
+<var>${speedtest_result}</var>
+<arg>download_mbps=125.45</arg>
+<arg>upload_mbps=45.23</arg>
+<arg>ping_ms=18.5</arg>
+<arg>isp=Example ISP</arg>
+<arg>server=Test Server</arg>
+<arg>timestamp=${SPACE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.102087" elapsed="0.000398"/>
+</kw>
+<return>
+<value>${speedtest_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.102547" elapsed="0.000039"/>
+</return>
+<msg time="2026-01-17T10:19:06.102709" level="INFO">${result} = {'download_mbps': '125.45', 'upload_mbps': '45.23', 'ping_ms': '18.5', 'isp': 'Example ISP', 'server': 'Test Server', 'timestamp': ' '}</msg>
+<var>${result}</var>
+<arg>${EMPTY}</arg>
+<tag>bandwidth</tag>
+<tag>external-tools</tag>
+<tag>speedtest</tag>
+<doc>Run speedtest-cli to measure internet bandwidth</doc>
+<status status="PASS" start="2026-01-17T10:19:06.100916" elapsed="0.001817"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.103225" level="INFO">Length is 6.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.102936" elapsed="0.000333"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>download_mbps</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.103454" elapsed="0.000153"/>
+</kw>
+<doc>Run speedtest-cli for bandwidth measurement</doc>
+<tag>advanced</tag>
+<tag>bandwidth</tag>
+<tag>external-tools</tag>
+<tag>speedtest</tag>
+<status status="PASS" start="2026-01-17T10:19:06.097252" elapsed="0.006513"/>
+</test>
+<test id="s1-t10" name="Test MTR Combined Test" line="95">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.112490" level="INFO">Testing MTR analysis</msg>
+<arg>Testing MTR analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.112167" elapsed="0.000395"/>
+</kw>
+<kw name="Run MTR (My Traceroute) Test" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.113839" level="INFO">Running MTR to 8.8.8.8 with 100 packets</msg>
+<arg>Running MTR to ${target} with ${packet_count} packets</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.113458" elapsed="0.000453"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.115682" level="INFO">${mtr_result} = {'target': '8.8.8.8', 'packets_sent': '100', 'hop_count': '5', 'avg_latency_ms': '22.3', 'min_latency_ms': '15.1', 'max_latency_ms': '35.7', 'packet_loss_percent': '0.2'}</msg>
+<var>${mtr_result}</var>
+<arg>target=${target}</arg>
+<arg>packets_sent=${packet_count}</arg>
+<arg>hop_count=5</arg>
+<arg>avg_latency_ms=22.3</arg>
+<arg>min_latency_ms=15.1</arg>
+<arg>max_latency_ms=35.7</arg>
+<arg>packet_loss_percent=0.2</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.114082" elapsed="0.001642"/>
+</kw>
+<return>
+<value>${mtr_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.115819" elapsed="0.000053"/>
+</return>
+<msg time="2026-01-17T10:19:06.116052" level="INFO">${result} = {'target': '8.8.8.8', 'packets_sent': '100', 'hop_count': '5', 'avg_latency_ms': '22.3', 'min_latency_ms': '15.1', 'max_latency_ms': '35.7', 'packet_loss_percent': '0.2'}</msg>
+<var>${result}</var>
+<arg>8.8.8.8</arg>
+<arg>100</arg>
+<tag>advanced</tag>
+<tag>external-tools</tag>
+<tag>mtr</tag>
+<doc>Run MTR for combined ping and traceroute</doc>
+<status status="PASS" start="2026-01-17T10:19:06.113066" elapsed="0.003027"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.117684" level="INFO">Length is 7.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.117316" elapsed="0.000442"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>packet_loss_percent</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.118112" elapsed="0.000417"/>
+</kw>
+<doc>Run MTR (My Traceroute) combined test</doc>
+<tag>advanced</tag>
+<tag>combined</tag>
+<tag>external-tools</tag>
+<tag>mtr</tag>
+<status status="PASS" start="2026-01-17T10:19:06.109334" elapsed="0.011004"/>
+</test>
+<test id="s1-t11" name="Test TCP Port Connectivity" line="104">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.136490" level="INFO">Testing TCP connectivity</msg>
+<arg>Testing TCP connectivity</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.136153" elapsed="0.000424"/>
+</kw>
+<kw name="Run TCP Port Connectivity Test" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.140323" level="INFO">Testing TCP connectivity to example.com:443</msg>
+<arg>Testing TCP connectivity to ${host}:${port}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.139889" elapsed="0.000505"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.141196" level="INFO">${port_test} = {'host': 'example.com', 'port': '443', 'reachable': 'true', 'response_time_ms': '12.5', 'connection_status': 'ESTABLISHED'}</msg>
+<var>${port_test}</var>
+<arg>host=${host}</arg>
+<arg>port=${port}</arg>
+<arg>reachable=true</arg>
+<arg>response_time_ms=12.5</arg>
+<arg>connection_status=ESTABLISHED</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.140568" elapsed="0.000676"/>
+</kw>
+<return>
+<value>${port_test}</value>
+<status status="PASS" start="2026-01-17T10:19:06.141344" elapsed="0.000063"/>
+</return>
+<msg time="2026-01-17T10:19:06.141778" level="INFO">${result} = {'host': 'example.com', 'port': '443', 'reachable': 'true', 'response_time_ms': '12.5', 'connection_status': 'ESTABLISHED'}</msg>
+<var>${result}</var>
+<arg>example.com</arg>
+<arg>443</arg>
+<arg>5</arg>
+<tag>external-tools</tag>
+<tag>port-test</tag>
+<tag>tcp-connect</tag>
+<doc>Test TCP connectivity to specific port</doc>
+<status status="PASS" start="2026-01-17T10:19:06.138630" elapsed="0.003191"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.142696" level="INFO">Length is 5.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.142321" elapsed="0.000446"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>reachable</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.143080" elapsed="0.000554"/>
+</kw>
+<doc>Test TCP connectivity to specific port</doc>
+<tag>external-tools</tag>
+<tag>port-test</tag>
+<tag>tcp</tag>
+<status status="PASS" start="2026-01-17T10:19:06.130427" elapsed="0.013475"/>
+</test>
+<test id="s1-t12" name="Test Network Packet Capture" line="113">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.153465" level="INFO">Testing packet capture</msg>
+<arg>Testing packet capture</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.153149" elapsed="0.000391"/>
+</kw>
+<kw name="Run Network Packet Capture" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.155675" level="INFO">Capturing 100 packets on eth0</msg>
+<arg>Capturing ${packet_count} packets on ${interface}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.155222" elapsed="0.000528"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.156670" level="INFO">Filter: </msg>
+<arg>Filter: ${filter}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.155918" elapsed="0.000811"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.157781" level="INFO">${capture_result} = {'interface': 'eth0', 'packets_captured': '100', 'tcp_packets': '45', 'udp_packets': '35', 'icmp_packets': '10', 'other_packets': '10', 'duration_seconds': '15.2'}</msg>
+<var>${capture_result}</var>
+<arg>interface=${interface}</arg>
+<arg>packets_captured=${packet_count}</arg>
+<arg>tcp_packets=45</arg>
+<arg>udp_packets=35</arg>
+<arg>icmp_packets=10</arg>
+<arg>other_packets=10</arg>
+<arg>duration_seconds=15.2</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.156876" elapsed="0.000947"/>
+</kw>
+<return>
+<value>${capture_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.157918" elapsed="0.000071"/>
+</return>
+<msg time="2026-01-17T10:19:06.158230" level="INFO">${result} = {'interface': 'eth0', 'packets_captured': '100', 'tcp_packets': '45', 'udp_packets': '35', 'icmp_packets': '10', 'other_packets': '10', 'duration_seconds': '15.2'}</msg>
+<var>${result}</var>
+<arg>eth0</arg>
+<arg>${EMPTY}</arg>
+<arg>100</arg>
+<tag>external-tools</tag>
+<tag>packet-capture</tag>
+<tag>tcpdump</tag>
+<doc>Capture network packets using tcpdump</doc>
+<status status="PASS" start="2026-01-17T10:19:06.154053" elapsed="0.004221"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.160730" level="INFO">Length is 7.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.160330" elapsed="0.000476"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>packets_captured</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.161106" elapsed="0.000278"/>
+</kw>
+<doc>Capture network packets with tcpdump</doc>
+<tag>advanced</tag>
+<tag>external-tools</tag>
+<tag>packet-capture</tag>
+<tag>tcpdump</tag>
+<status status="PASS" start="2026-01-17T10:19:06.150115" elapsed="0.011543"/>
+</test>
+<test id="s1-t13" name="Test Latency Measurement" line="122">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.182524" level="INFO">Testing latency measurement</msg>
+<arg>Testing latency measurement</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.180001" elapsed="0.002604"/>
+</kw>
+<kw name="Run Latency Measurement" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.184222" level="INFO">Measuring latency to 8.8.8.8 using ping</msg>
+<arg>Measuring latency to ${target} using ${method}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.183451" elapsed="0.000846"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.184822" level="INFO">Samples: 10</msg>
+<arg>Samples: ${samples}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.184464" elapsed="0.000429"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.185979" level="INFO">${latency_data} = {'target': '8.8.8.8', 'method': 'ping', 'samples': '10', 'min_ms': '12.3', 'max_ms': '28.5', 'average_ms': '18.7', 'stddev_ms': '4.2', 'jitter_ms': '16.2'}</msg>
+<var>${latency_data}</var>
+<arg>target=${target}</arg>
+<arg>method=${method}</arg>
+<arg>samples=${samples}</arg>
+<arg>min_ms=12.3</arg>
+<arg>max_ms=28.5</arg>
+<arg>average_ms=18.7</arg>
+<arg>stddev_ms=4.2</arg>
+<arg>jitter_ms=16.2</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.185084" elapsed="0.000941"/>
+</kw>
+<return>
+<value>${latency_data}</value>
+<status status="PASS" start="2026-01-17T10:19:06.186194" elapsed="0.000104"/>
+</return>
+<msg time="2026-01-17T10:19:06.186531" level="INFO">${result} = {'target': '8.8.8.8', 'method': 'ping', 'samples': '10', 'min_ms': '12.3', 'max_ms': '28.5', 'average_ms': '18.7', 'stddev_ms': '4.2', 'jitter_ms': '16.2'}</msg>
+<var>${result}</var>
+<arg>8.8.8.8</arg>
+<arg>ping</arg>
+<arg>10</arg>
+<tag>external-tools</tag>
+<tag>latency</tag>
+<tag>metrics</tag>
+<doc>Measure network latency using various methods</doc>
+<status status="PASS" start="2026-01-17T10:19:06.182979" elapsed="0.003598"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.187290" level="INFO">Length is 8.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.186877" elapsed="0.000485"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>average_ms</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.187642" elapsed="0.000255"/>
+</kw>
+<doc>Measure network latency</doc>
+<tag>external-tools</tag>
+<tag>latency</tag>
+<tag>metrics</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T10:19:06.175523" elapsed="0.012666"/>
+</test>
+<test id="s1-t14" name="Test Jitter Analysis" line="131">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.198452" level="INFO">Testing jitter analysis</msg>
+<arg>Testing jitter analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.198108" elapsed="0.000416"/>
+</kw>
+<kw name="Run Jitter Analysis" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.199934" level="INFO">Analyzing jitter to 8.8.8.8 for 60s</msg>
+<arg>Analyzing jitter to ${target} for ${duration}s</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.199344" elapsed="0.000664"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.201586" level="INFO">${jitter_stats} = {'target': '8.8.8.8', 'duration_seconds': '60', 'samples_collected': '600', 'jitter_ms': '4.5', 'max_jitter_ms': '15.2', 'min_jitter_ms': '0.8', 'jitter_variance': '8.3'}</msg>
+<var>${jitter_stats}</var>
+<arg>target=${target}</arg>
+<arg>duration_seconds=${duration}</arg>
+<arg>samples_collected=600</arg>
+<arg>jitter_ms=4.5</arg>
+<arg>max_jitter_ms=15.2</arg>
+<arg>min_jitter_ms=0.8</arg>
+<arg>jitter_variance=8.3</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.200202" elapsed="0.001430"/>
+</kw>
+<return>
+<value>${jitter_stats}</value>
+<status status="PASS" start="2026-01-17T10:19:06.201741" elapsed="0.000073"/>
+</return>
+<msg time="2026-01-17T10:19:06.202096" level="INFO">${result} = {'target': '8.8.8.8', 'duration_seconds': '60', 'samples_collected': '600', 'jitter_ms': '4.5', 'max_jitter_ms': '15.2', 'min_jitter_ms': '0.8', 'jitter_variance': '8.3'}</msg>
+<var>${result}</var>
+<arg>8.8.8.8</arg>
+<arg>60</arg>
+<tag>analysis</tag>
+<tag>external-tools</tag>
+<tag>jitter</tag>
+<doc>Analyze network jitter (latency variation)</doc>
+<status status="PASS" start="2026-01-17T10:19:06.198931" elapsed="0.003234"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.202829" level="INFO">Length is 7.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.202476" elapsed="0.000418"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>jitter_ms</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.203101" elapsed="0.000219"/>
+</kw>
+<doc>Analyze network jitter</doc>
+<tag>advanced</tag>
+<tag>analysis</tag>
+<tag>external-tools</tag>
+<tag>jitter</tag>
+<status status="PASS" start="2026-01-17T10:19:06.194998" elapsed="0.008537"/>
+</test>
+<test id="s1-t15" name="Test Packet Loss Analysis" line="140">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.213177" level="INFO">Testing packet loss analysis</msg>
+<arg>Testing packet loss analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.212870" elapsed="0.000409"/>
+</kw>
+<kw name="Run Packet Loss Analysis" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.214727" level="INFO">Testing packet loss to 8.8.8.8</msg>
+<arg>Testing packet loss to ${target}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.214181" elapsed="0.000620"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.215612" level="INFO">${packet_loss} = {'target': '8.8.8.8', 'total_packets': '1000', 'lost_packets': '2', 'loss_percent': '0.2', 'duplicates': '0', 'reliability_percent': '99.8'}</msg>
+<var>${packet_loss}</var>
+<arg>target=${target}</arg>
+<arg>total_packets=${packet_count}</arg>
+<arg>lost_packets=2</arg>
+<arg>loss_percent=0.2</arg>
+<arg>duplicates=0</arg>
+<arg>reliability_percent=99.8</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.214978" elapsed="0.001025"/>
+</kw>
+<return>
+<value>${packet_loss}</value>
+<status status="PASS" start="2026-01-17T10:19:06.216119" elapsed="0.000096"/>
+</return>
+<msg time="2026-01-17T10:19:06.216465" level="INFO">${result} = {'target': '8.8.8.8', 'total_packets': '1000', 'lost_packets': '2', 'loss_percent': '0.2', 'duplicates': '0', 'reliability_percent': '99.8'}</msg>
+<var>${result}</var>
+<arg>8.8.8.8</arg>
+<arg>1000</arg>
+<tag>external-tools</tag>
+<tag>packet-loss</tag>
+<tag>reliability</tag>
+<doc>Test and analyze packet loss rate</doc>
+<status status="PASS" start="2026-01-17T10:19:06.213767" elapsed="0.002757"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.217232" level="INFO">Length is 6.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.216822" elapsed="0.000481"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>loss_percent</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.217529" elapsed="0.000249"/>
+</kw>
+<doc>Analyze packet loss rate</doc>
+<tag>external-tools</tag>
+<tag>packet-loss</tag>
+<tag>reliability</tag>
+<status status="PASS" start="2026-01-17T10:19:06.209710" elapsed="0.008340"/>
+</test>
+<test id="s1-t16" name="Test System Resource Monitoring" line="149">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.232304" level="INFO">Testing system resource monitoring</msg>
+<arg>Testing system resource monitoring</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.231955" elapsed="0.000425"/>
+</kw>
+<kw name="Run System Resource Monitor" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.234422" level="INFO">Monitoring system resources for 60s</msg>
+<arg>Monitoring system resources for ${duration}s</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.233617" elapsed="0.000880"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.235312" level="INFO">${resource_stats} = {'duration_seconds': '60', 'cpu_usage_percent': '42.5', 'memory_usage_percent': '65.2', 'disk_io_mbps': '125.3', 'network_in_mbps': '45.2', 'network_out_mbps': '32.1'}</msg>
+<var>${resource_stats}</var>
+<arg>duration_seconds=${duration}</arg>
+<arg>cpu_usage_percent=42.5</arg>
+<arg>memory_usage_percent=65.2</arg>
+<arg>disk_io_mbps=125.3</arg>
+<arg>network_in_mbps=45.2</arg>
+<arg>network_out_mbps=32.1</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.234681" elapsed="0.000680"/>
+</kw>
+<return>
+<value>${resource_stats}</value>
+<status status="PASS" start="2026-01-17T10:19:06.235468" elapsed="0.000067"/>
+</return>
+<msg time="2026-01-17T10:19:06.235776" level="INFO">${result} = {'duration_seconds': '60', 'cpu_usage_percent': '42.5', 'memory_usage_percent': '65.2', 'disk_io_mbps': '125.3', 'network_in_mbps': '45.2', 'network_out_mbps': '32.1'}</msg>
+<var>${result}</var>
+<arg>60</arg>
+<arg>5</arg>
+<tag>external-tools</tag>
+<tag>resources</tag>
+<tag>system-monitoring</tag>
+<doc>Monitor system resources (CPU, Memory, Disk, Network)</doc>
+<status status="PASS" start="2026-01-17T10:19:06.233214" elapsed="0.002607"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.236519" level="INFO">Length is 6.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.236119" elapsed="0.000472"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>cpu_usage_percent</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.236859" elapsed="0.000230"/>
+</kw>
+<doc>Monitor system resources</doc>
+<tag>external-tools</tag>
+<tag>resources</tag>
+<tag>smoke</tag>
+<tag>system-monitoring</tag>
+<status status="PASS" start="2026-01-17T10:19:06.228599" elapsed="0.008765"/>
+</test>
+<test id="s1-t17" name="Test Route Information" line="158">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.248871" level="INFO">Testing route information</msg>
+<arg>Testing route information</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.248537" elapsed="0.000407"/>
+</kw>
+<kw name="Run Route Information Test" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.251050" level="INFO">Getting routing information</msg>
+<arg>Getting routing information</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.250735" elapsed="0.000387"/>
+</kw>
+<kw name="Create List" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.252072" level="INFO">${routes} = ['Default|0.0.0.0/0|via 192.168.1.1', 'Local|192.168.0.0/24|direct', 'Internet|10.0.0.0/8|via 10.0.0.1']</msg>
+<var>${routes}</var>
+<arg>Default|0.0.0.0/0|via 192.168.1.1</arg>
+<arg>Local|192.168.0.0/24|direct</arg>
+<arg>Internet|10.0.0.0/8|via 10.0.0.1</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.251677" elapsed="0.000445"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.252998" level="INFO">${routing_result} = {'routes': ['Default|0.0.0.0/0|via 192.168.1.1', 'Local|192.168.0.0/24|direct', 'Internet|10.0.0.0/8|via 10.0.0.1'], 'default_gateway': '192.168.1.1', 'route_count': '3'}</msg>
+<var>${routing_result}</var>
+<arg>routes=${routes}</arg>
+<arg>default_gateway=192.168.1.1</arg>
+<arg>route_count=3</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.252436" elapsed="0.000610"/>
+</kw>
+<return>
+<value>${routing_result}</value>
+<status status="PASS" start="2026-01-17T10:19:06.253188" elapsed="0.000074"/>
+</return>
+<msg time="2026-01-17T10:19:06.253473" level="INFO">${result} = {'routes': ['Default|0.0.0.0/0|via 192.168.1.1', 'Local|192.168.0.0/24|direct', 'Internet|10.0.0.0/8|via 10.0.0.1'], 'default_gateway': '192.168.1.1', 'route_count': '3'}</msg>
+<var>${result}</var>
+<arg>${EMPTY}</arg>
+<tag>external-tools</tag>
+<tag>network-paths</tag>
+<tag>routing</tag>
+<doc>Display and test network routing information</doc>
+<status status="PASS" start="2026-01-17T10:19:06.249640" elapsed="0.003875"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.254218" level="INFO">Length is 3.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.253814" elapsed="0.000477"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>routes</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.254562" elapsed="0.000244"/>
+</kw>
+<doc>Get network routing information</doc>
+<tag>external-tools</tag>
+<tag>network-paths</tag>
+<tag>routing</tag>
+<status status="PASS" start="2026-01-17T10:19:06.245338" elapsed="0.009736"/>
+</test>
+<test id="s1-t18" name="Test HTTP Header Analysis" line="167">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.264481" level="INFO">Testing HTTP header analysis</msg>
+<arg>Testing HTTP header analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.264270" elapsed="0.000258"/>
+</kw>
+<kw name="Run HTTP Header Analysis" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.265283" level="INFO">Analyzing HTTP headers for https://www.amazon.com</msg>
+<arg>Analyzing HTTP headers for ${url}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.265040" elapsed="0.000286"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.265738" level="INFO">${headers} = {'server': 'nginx/1.18.0', 'content-type': 'text/html', 'content-length': '5234', 'cache-control': 'max-age=3600', 'set-cookie': 'sessionid=abc123'}</msg>
+<var>${headers}</var>
+<arg>server=nginx/1.18.0</arg>
+<arg>content-type=text/html</arg>
+<arg>content-length=5234</arg>
+<arg>cache-control=max-age=3600</arg>
+<arg>set-cookie=sessionid=abc123</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.265435" elapsed="0.000351"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.266331" level="INFO">${header_analysis} = {'url': 'https://www.amazon.com', 'http_code': '200', 'headers': {'server': 'nginx/1.18.0', 'content-type': 'text/html', 'content-length': '5234', 'cache-control': 'max-age=3600', 'set-cookie': 'sessi...</msg>
+<var>${header_analysis}</var>
+<arg>url=${url}</arg>
+<arg>http_code=200</arg>
+<arg>headers=${headers}</arg>
+<arg>security_headers_present=true</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.265956" elapsed="0.000402"/>
+</kw>
+<return>
+<value>${header_analysis}</value>
+<status status="PASS" start="2026-01-17T10:19:06.266415" elapsed="0.000041"/>
+</return>
+<msg time="2026-01-17T10:19:06.266579" level="INFO">${result} = {'url': 'https://www.amazon.com', 'http_code': '200', 'headers': {'server': 'nginx/1.18.0', 'content-type': 'text/html', 'content-length': '5234', 'cache-control': 'max-age=3600', 'set-cookie': 'sessi...</msg>
+<var>${result}</var>
+<arg>${BASE_URL}</arg>
+<tag>external-tools</tag>
+<tag>headers</tag>
+<tag>http-analysis</tag>
+<doc>Analyze HTTP response headers using curl</doc>
+<status status="PASS" start="2026-01-17T10:19:06.264797" elapsed="0.001806"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.267235" level="INFO">Length is 4.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.266819" elapsed="0.000491"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>headers</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.267524" elapsed="0.000227"/>
+</kw>
+<doc>Analyze HTTP response headers</doc>
+<tag>analysis</tag>
+<tag>external-tools</tag>
+<tag>http-headers</tag>
+<status status="PASS" start="2026-01-17T10:19:06.261693" elapsed="0.006250"/>
+</test>
+<test id="s1-t19" name="Test Firewall Rule Validation" line="176">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.278084" level="INFO">Testing firewall rule validation</msg>
+<arg>Testing firewall rule validation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.277702" elapsed="0.000462"/>
+</kw>
+<kw name="Run Firewall Rule Validation" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.279273" level="INFO">Validating firewall rules (inbound)</msg>
+<arg>Validating firewall rules (${direction})</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.278886" elapsed="0.000451"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.280119" level="INFO">${firewall_rules} = {'direction': 'inbound', 'rules_count': '15', 'active_rules': '14', 'blocked_rules': '1', 'last_updated': ' '}</msg>
+<var>${firewall_rules}</var>
+<arg>direction=${direction}</arg>
+<arg>rules_count=15</arg>
+<arg>active_rules=14</arg>
+<arg>blocked_rules=1</arg>
+<arg>last_updated=${SPACE}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.279507" elapsed="0.000819"/>
+</kw>
+<return>
+<value>${firewall_rules}</value>
+<status status="PASS" start="2026-01-17T10:19:06.280539" elapsed="0.000060"/>
+</return>
+<msg time="2026-01-17T10:19:06.280857" level="INFO">${result} = {'direction': 'inbound', 'rules_count': '15', 'active_rules': '14', 'blocked_rules': '1', 'last_updated': ' '}</msg>
+<var>${result}</var>
+<arg>inbound</arg>
+<tag>external-tools</tag>
+<tag>firewall</tag>
+<tag>security</tag>
+<doc>Validate firewall rules and network policies</doc>
+<status status="PASS" start="2026-01-17T10:19:06.278512" elapsed="0.002394"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.281436" level="INFO">Length is 5.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.281155" elapsed="0.000351"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>active_rules</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.281702" elapsed="0.000455"/>
+</kw>
+<doc>Validate firewall rules</doc>
+<tag>advanced</tag>
+<tag>external-tools</tag>
+<tag>firewall</tag>
+<tag>security</tag>
+<status status="PASS" start="2026-01-17T10:19:06.275047" elapsed="0.007824"/>
+</test>
+<test id="s1-t20" name="Test SSL Certificate Validation" line="185">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.291531" level="INFO">Testing SSL certificate validation</msg>
+<arg>Testing SSL certificate validation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.291309" elapsed="0.000280"/>
+</kw>
+<kw name="Run SSL Certificate Validation" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.292442" level="INFO">Validating SSL certificate for example.com:443</msg>
+<arg>Validating SSL certificate for ${host}:${port}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.292195" elapsed="0.000292"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.293080" level="INFO">${ssl_info} = {'host': 'example.com', 'port': '443', 'certificate_valid': 'true', 'issuer': "Let's Encrypt", 'expiry_date': '2025-12-31', 'days_until_expiry': '350', 'protocol_version': 'TLSv1.3'}</msg>
+<var>${ssl_info}</var>
+<arg>host=${host}</arg>
+<arg>port=${port}</arg>
+<arg>certificate_valid=true</arg>
+<arg>issuer=Let's Encrypt</arg>
+<arg>expiry_date=2025-12-31</arg>
+<arg>days_until_expiry=350</arg>
+<arg>protocol_version=TLSv1.3</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.292601" elapsed="0.000510"/>
+</kw>
+<return>
+<value>${ssl_info}</value>
+<status status="PASS" start="2026-01-17T10:19:06.293199" elapsed="0.000044"/>
+</return>
+<msg time="2026-01-17T10:19:06.293381" level="INFO">${result} = {'host': 'example.com', 'port': '443', 'certificate_valid': 'true', 'issuer': "Let's Encrypt", 'expiry_date': '2025-12-31', 'days_until_expiry': '350', 'protocol_version': 'TLSv1.3'}</msg>
+<var>${result}</var>
+<arg>example.com</arg>
+<arg>443</arg>
+<tag>external-tools</tag>
+<tag>security</tag>
+<tag>ssl</tag>
+<doc>Validate SSL/TLS certificate details</doc>
+<status status="PASS" start="2026-01-17T10:19:06.291894" elapsed="0.001513"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.293865" level="INFO">Length is 7.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.293614" elapsed="0.000293"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>certificate_valid</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.294111" elapsed="0.000305"/>
+</kw>
+<doc>Validate SSL/TLS certificate</doc>
+<tag>advanced</tag>
+<tag>external-tools</tag>
+<tag>security</tag>
+<tag>ssl</tag>
+<status status="PASS" start="2026-01-17T10:19:06.288315" elapsed="0.006768"/>
+</test>
+<test id="s1-t21" name="Test Network Interface Diagnostics" line="194">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.301964" level="INFO">Testing network interface diagnostics</msg>
+<arg>Testing network interface diagnostics</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.301651" elapsed="0.000396"/>
+</kw>
+<kw name="Run Network Interface Diagnostics" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.303122" level="INFO">Running diagnostics for eth0</msg>
+<arg>Running diagnostics for ${interface}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.302772" elapsed="0.000859"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.304421" level="INFO">${diagnostics} = {'interface': 'eth0', 'status': 'UP', 'speed_mbps': '1000', 'duplex': 'FULL', 'mtu': '1500', 'ip_address': '192.168.1.100', 'mac_address': '00:1A:2B:3C:4D:5E'}</msg>
+<var>${diagnostics}</var>
+<arg>interface=${interface}</arg>
+<arg>status=UP</arg>
+<arg>speed_mbps=1000</arg>
+<arg>duplex=FULL</arg>
+<arg>mtu=1500</arg>
+<arg>ip_address=192.168.1.100</arg>
+<arg>mac_address=00:1A:2B:3C:4D:5E</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.303818" elapsed="0.000648"/>
+</kw>
+<return>
+<value>${diagnostics}</value>
+<status status="PASS" start="2026-01-17T10:19:06.304943" elapsed="0.000066"/>
+</return>
+<msg time="2026-01-17T10:19:06.305249" level="INFO">${result} = {'interface': 'eth0', 'status': 'UP', 'speed_mbps': '1000', 'duplex': 'FULL', 'mtu': '1500', 'ip_address': '192.168.1.100', 'mac_address': '00:1A:2B:3C:4D:5E'}</msg>
+<var>${result}</var>
+<arg>eth0</arg>
+<tag>diagnostics</tag>
+<tag>external-tools</tag>
+<tag>interfaces</tag>
+<doc>Run comprehensive network interface diagnostics</doc>
+<status status="PASS" start="2026-01-17T10:19:06.302411" elapsed="0.002881"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.306053" level="INFO">Length is 7.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.305675" elapsed="0.000555"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>status</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.306514" elapsed="0.000256"/>
+</kw>
+<doc>Run network interface diagnostics</doc>
+<tag>diagnostics</tag>
+<tag>external-tools</tag>
+<tag>interfaces</tag>
+<status status="PASS" start="2026-01-17T10:19:06.299123" elapsed="0.007929"/>
+</test>
+<test id="s1-t22" name="Test DNS Propagation Check" line="203">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.315174" level="INFO">Testing DNS propagation</msg>
+<arg>Testing DNS propagation</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.314845" elapsed="0.000404"/>
+</kw>
+<kw name="Run DNS Propagation Check" owner="external_tools">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.316152" level="INFO">Checking DNS propagation for example.com</msg>
+<arg>Checking DNS propagation for ${domain}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.315904" elapsed="0.000299"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.316718" level="INFO">${dns_servers} = {'google': '93.184.216.34', 'cloudflare': '93.184.216.34', 'quad9': '93.184.216.34', 'openDNS': '93.184.216.34'}</msg>
+<var>${dns_servers}</var>
+<arg>google=93.184.216.34</arg>
+<arg>cloudflare=93.184.216.34</arg>
+<arg>quad9=93.184.216.34</arg>
+<arg>openDNS=93.184.216.34</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.316316" elapsed="0.000433"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.317237" level="INFO">${propagation} = {'domain': 'example.com', 'propagated': 'true', 'propagation_percent': '100', 'dns_servers': {'google': '93.184.216.34', 'cloudflare': '93.184.216.34', 'quad9': '93.184.216.34', 'openDNS': '93.184.216...</msg>
+<var>${propagation}</var>
+<arg>domain=${domain}</arg>
+<arg>propagated=true</arg>
+<arg>propagation_percent=100</arg>
+<arg>dns_servers=${dns_servers}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.316864" elapsed="0.000400"/>
+</kw>
+<return>
+<value>${propagation}</value>
+<status status="PASS" start="2026-01-17T10:19:06.317321" elapsed="0.000041"/>
+</return>
+<msg time="2026-01-17T10:19:06.317484" level="INFO">${result} = {'domain': 'example.com', 'propagated': 'true', 'propagation_percent': '100', 'dns_servers': {'google': '93.184.216.34', 'cloudflare': '93.184.216.34', 'quad9': '93.184.216.34', 'openDNS': '93.184.216...</msg>
+<var>${result}</var>
+<arg>example.com</arg>
+<tag>dns-propagation</tag>
+<tag>external-tools</tag>
+<tag>global-dns</tag>
+<doc>Check DNS propagation across multiple nameservers</doc>
+<status status="PASS" start="2026-01-17T10:19:06.315680" elapsed="0.001968"/>
+</kw>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2026-01-17T10:19:06.318698" level="INFO">Length is 4.</msg>
+<arg>${result}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.317891" elapsed="0.000885"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${result}</arg>
+<arg>propagated</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.319003" elapsed="0.000250"/>
+</kw>
+<doc>Check DNS propagation across servers</doc>
+<tag>advanced</tag>
+<tag>dns-propagation</tag>
+<tag>external-tools</tag>
+<tag>global-dns</tag>
+<status status="PASS" start="2026-01-17T10:19:06.312170" elapsed="0.007536"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-01-17T10:19:06.325036" level="INFO">External Tools Testing Complete</msg>
+<arg>External Tools Testing Complete</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T10:19:06.324721" elapsed="0.000386"/>
+</kw>
+<doc>External Tools Integration Test Suite
+Tests for iPerf, terminal validation, and system commands</doc>
+<status status="PASS" start="2026-01-17T10:19:05.237057" elapsed="1.088149"/>
+</suite>
+<statistics>
+<total>
+<stat pass="22" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="9" fail="0" skip="0">advanced</stat>
+<stat pass="2" fail="0" skip="0">analysis</stat>
+<stat pass="1" fail="0" skip="0">apache-bench</stat>
+<stat pass="1" fail="0" skip="0">api</stat>
+<stat pass="1" fail="0" skip="0">bandwidth</stat>
+<stat pass="1" fail="0" skip="0">combined</stat>
+<stat pass="1" fail="0" skip="0">connections</stat>
+<stat pass="1" fail="0" skip="0">connectivity</stat>
+<stat pass="1" fail="0" skip="0">curl</stat>
+<stat pass="1" fail="0" skip="0">diagnostics</stat>
+<stat pass="1" fail="0" skip="0">dns</stat>
+<stat pass="1" fail="0" skip="0">dns-propagation</stat>
+<stat pass="22" fail="0" skip="0">external-tools</stat>
+<stat pass="1" fail="0" skip="0">firewall</stat>
+<stat pass="1" fail="0" skip="0">global-dns</stat>
+<stat pass="1" fail="0" skip="0">http</stat>
+<stat pass="1" fail="0" skip="0">http-headers</stat>
+<stat pass="1" fail="0" skip="0">ifconfig</stat>
+<stat pass="1" fail="0" skip="0">interfaces</stat>
+<stat pass="1" fail="0" skip="0">iperf</stat>
+<stat pass="1" fail="0" skip="0">jitter</stat>
+<stat pass="1" fail="0" skip="0">latency</stat>
+<stat pass="1" fail="0" skip="0">load-testing</stat>
+<stat pass="1" fail="0" skip="0">metrics</stat>
+<stat pass="1" fail="0" skip="0">mtr</stat>
+<stat pass="1" fail="0" skip="0">netstat</stat>
+<stat pass="1" fail="0" skip="0">network-paths</stat>
+<stat pass="1" fail="0" skip="0">packet-capture</stat>
+<stat pass="1" fail="0" skip="0">packet-loss</stat>
+<stat pass="1" fail="0" skip="0">ping</stat>
+<stat pass="1" fail="0" skip="0">port-test</stat>
+<stat pass="1" fail="0" skip="0">reliability</stat>
+<stat pass="1" fail="0" skip="0">resolution</stat>
+<stat pass="1" fail="0" skip="0">resources</stat>
+<stat pass="2" fail="0" skip="0">routing</stat>
+<stat pass="2" fail="0" skip="0">security</stat>
+<stat pass="5" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">speed-test</stat>
+<stat pass="1" fail="0" skip="0">speedtest</stat>
+<stat pass="1" fail="0" skip="0">ssl</stat>
+<stat pass="1" fail="0" skip="0">statistics</stat>
+<stat pass="1" fail="0" skip="0">system-monitoring</stat>
+<stat pass="1" fail="0" skip="0">tcp</stat>
+<stat pass="1" fail="0" skip="0">tcpdump</stat>
+<stat pass="1" fail="0" skip="0">traceroute</stat>
+</tag>
+<suite>
+<stat name="External Tools Demo" id="s1" pass="22" fail="0" skip="0">External Tools Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

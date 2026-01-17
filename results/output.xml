@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.1 on linux)" generated="2026-01-17T09:46:38.180280" rpa="false" schemaversion="5">
+<suite id="s1" name="Network Demo &amp; Performance Demo">
+<suite id="s1-s1" name="Network Demo" source="/workspaces/OpenRobo-Web-Framework/tests/network/network_demo.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-01-17T09:46:38.373992" level="INFO">Starting Network Testing Suite</msg>
+<arg>Starting Network Testing Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.373703" elapsed="0.000354"/>
+</kw>
+<test id="s1-s1-t1" name="Test Network Monitoring Keywords Available" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.374858" level="INFO">Network monitoring keywords: Record Network Requests, Intercept Network Call</msg>
+<arg>Network monitoring keywords: Record Network Requests, Intercept Network Call</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.374645" elapsed="0.000263"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.375229" level="INFO">Network testing initialized</msg>
+<arg>Network testing initialized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.375036" elapsed="0.000234"/>
+</kw>
+<msg time="2026-01-17T09:46:38.380994" level="INFO">Starting Browser process /home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js using port 33529</msg>
+<msg time="2026-01-17T09:46:38.381080" level="INFO">Node startup parameters: ['node', '/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js', '33529']</msg>
+<doc>Verify network monitoring keywords are available</doc>
+<tag>network</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T09:46:38.374210" elapsed="0.001166"/>
+</test>
+<test id="s1-s1-t2" name="Test API Testing Keywords Available" line="21">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.769536" level="INFO">API testing keywords: Test API Endpoint, Verify Network Request Headers</msg>
+<arg>API testing keywords: Test API Endpoint, Verify Network Request Headers</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.769228" elapsed="0.000365"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.769919" level="INFO">API testing initialized</msg>
+<arg>API testing initialized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.769724" elapsed="0.000238"/>
+</kw>
+<doc>Verify API testing keywords are available</doc>
+<tag>api</tag>
+<tag>network</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T09:46:38.766716" elapsed="0.003363"/>
+</test>
+<test id="s1-s1-t3" name="Test Network Throttling Keywords Available" line="28">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.777340" level="INFO">Network throttling profiles: slow-4g, 4g, 3g, 2g</msg>
+<arg>Network throttling profiles: slow-4g, 4g, 3g, 2g</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.777078" elapsed="0.000313"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.777680" level="INFO">Throttling simulation keywords available</msg>
+<arg>Throttling simulation keywords available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.777503" elapsed="0.000217"/>
+</kw>
+<doc>Verify network throttling keywords are available</doc>
+<tag>network</tag>
+<tag>smoke</tag>
+<tag>throttling</tag>
+<status status="PASS" start="2026-01-17T09:46:38.774524" elapsed="0.003295"/>
+</test>
+<test id="s1-s1-t4" name="Test Network Failure Handling Keywords Available" line="35">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.784697" level="INFO">Failure types: offline, timeout, connection-reset, dns-failed</msg>
+<arg>Failure types: offline, timeout, connection-reset, dns-failed</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.784483" elapsed="0.000261"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.785026" level="INFO">Network failure handling keywords available</msg>
+<arg>Network failure handling keywords available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.784851" elapsed="0.000215"/>
+</kw>
+<doc>Verify network failure handling keywords exist</doc>
+<tag>network</tag>
+<tag>resilience</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T09:46:38.782260" elapsed="0.002934"/>
+</test>
+<test id="s1-s1-t5" name="Test Network HAR Recording Keywords Available" line="42">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.790824" level="INFO">HAR recording available for network traffic analysis</msg>
+<arg>HAR recording available for network traffic analysis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.790582" elapsed="0.000290"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.791185" level="INFO">HAR format supported</msg>
+<arg>HAR format supported</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.790980" elapsed="0.000249"/>
+</kw>
+<doc>Verify HAR recording capability</doc>
+<tag>har</tag>
+<tag>network</tag>
+<tag>recording</tag>
+<status status="PASS" start="2026-01-17T09:46:38.788623" elapsed="0.002704"/>
+</test>
+<test id="s1-s1-t6" name="Test Network Performance Keywords Available" line="49">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.797081" level="INFO">Keywords available: Monitor Request Response Times, Measure Time To First Byte</msg>
+<arg>Keywords available: Monitor Request Response Times, Measure Time To First Byte</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.796868" elapsed="0.000284"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.797445" level="INFO">Network performance monitoring initialized</msg>
+<arg>Network performance monitoring initialized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.797267" elapsed="0.000219"/>
+</kw>
+<doc>Verify network performance monitoring keywords</doc>
+<tag>network</tag>
+<tag>performance</tag>
+<status status="PASS" start="2026-01-17T09:46:38.794876" elapsed="0.002708"/>
+</test>
+<test id="s1-s1-t7" name="Test WebSocket Monitoring Keywords Available" line="56">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.802943" level="INFO">WebSocket monitoring available</msg>
+<arg>WebSocket monitoring available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.802738" elapsed="0.000249"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.803422" level="INFO">Real-time communication testing supported</msg>
+<arg>Real-time communication testing supported</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.803162" elapsed="0.000322"/>
+</kw>
+<doc>Verify WebSocket monitoring is available</doc>
+<tag>advanced</tag>
+<tag>network</tag>
+<tag>websocket</tag>
+<status status="PASS" start="2026-01-17T09:46:38.800758" elapsed="0.002874"/>
+</test>
+<test id="s1-s1-t8" name="Test Network Security Keywords Available" line="63">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.809739" level="INFO">Keywords available: Test CORS Headers, Verify Network Request Headers</msg>
+<arg>Keywords available: Test CORS Headers, Verify Network Request Headers</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.809535" elapsed="0.000250"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.810262" level="INFO">Security header testing initialized</msg>
+<arg>Security header testing initialized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.810008" elapsed="0.000299"/>
+</kw>
+<doc>Verify network security testing keywords</doc>
+<tag>headers</tag>
+<tag>network</tag>
+<tag>security</tag>
+<status status="PASS" start="2026-01-17T09:46:38.807586" elapsed="0.002824"/>
+</test>
+<test id="s1-s1-t9" name="Test Network Error Capture Keywords Available" line="70">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.816110" level="INFO">Error capture and logging available</msg>
+<arg>Error capture and logging available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.815903" elapsed="0.000284"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.816471" level="INFO">Network diagnostics enabled</msg>
+<arg>Network diagnostics enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.816294" elapsed="0.000216"/>
+</kw>
+<doc>Verify error capturing capabilities</doc>
+<tag>diagnostics</tag>
+<tag>errors</tag>
+<tag>network</tag>
+<status status="PASS" start="2026-01-17T09:46:38.813816" elapsed="0.002790"/>
+</test>
+<test id="s1-s1-t10" name="Test Network Cache Monitoring Keywords Available" line="77">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.821939" level="INFO">Cache hit rate monitoring available</msg>
+<arg>Cache hit rate monitoring available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.821731" elapsed="0.000253"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.822311" level="INFO">Cache performance analysis enabled</msg>
+<arg>Cache performance analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.822088" elapsed="0.000268"/>
+</kw>
+<doc>Verify cache monitoring is available</doc>
+<tag>cache</tag>
+<tag>network</tag>
+<tag>optimization</tag>
+<status status="PASS" start="2026-01-17T09:46:38.819944" elapsed="0.002511"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-01-17T09:46:38.826476" level="INFO">Network Testing Complete</msg>
+<arg>Network Testing Complete</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.826267" elapsed="0.000253"/>
+</kw>
+<doc>Network Testing Test Suite - Demonstration
+Shows network testing capabilities without actual browser automation</doc>
+<status status="PASS" start="2026-01-17T09:46:38.207216" elapsed="0.619350"/>
+</suite>
+<suite id="s1-s2" name="Performance Demo" source="/workspaces/OpenRobo-Web-Framework/tests/performance/performance_demo.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2026-01-17T09:46:38.846928" level="INFO">Starting Performance Testing Suite</msg>
+<arg>Starting Performance Testing Suite</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.846722" elapsed="0.000251"/>
+</kw>
+<test id="s1-s2-t1" name="Test Page Load Time Measurement Keywords Available" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.849352" level="INFO">Keyword available: Measure Page Load Time</msg>
+<arg>Keyword available: Measure Page Load Time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.849117" elapsed="0.000280"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.849678" level="INFO">Load time measurement initialized</msg>
+<arg>Load time measurement initialized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.849503" elapsed="0.000215"/>
+</kw>
+<doc>Verify page load time keywords are available</doc>
+<tag>load-time</tag>
+<tag>performance</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T09:46:38.847037" elapsed="0.002778"/>
+</test>
+<test id="s1-s2-t2" name="Test Paint Timing Keywords Available" line="21">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.855172" level="INFO">Keywords available: FP, FCP, LCP measurements</msg>
+<arg>Keywords available: FP, FCP, LCP measurements</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.854935" elapsed="0.000287"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.855503" level="INFO">Paint timing analysis enabled</msg>
+<arg>Paint timing analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.855329" elapsed="0.000214"/>
+</kw>
+<doc>Verify paint timing keywords are available</doc>
+<tag>paint</tag>
+<tag>performance</tag>
+<tag>rendering</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T09:46:38.853075" elapsed="0.002562"/>
+</test>
+<test id="s1-s2-t3" name="Test Core Web Vitals Keywords Available" line="28">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.862748" level="INFO">Keywords available: Measure Core Web Vitals</msg>
+<arg>Keywords available: Measure Core Web Vitals</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.862446" elapsed="0.000371"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.863284" level="INFO">Metrics: LCP, FID, CLS, INP</msg>
+<arg>Metrics: LCP, FID, CLS, INP</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.862977" elapsed="0.000373"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.863774" level="INFO">Core Web Vitals testing initialized</msg>
+<arg>Core Web Vitals testing initialized</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.863502" elapsed="0.000333"/>
+</kw>
+<doc>Verify Core Web Vitals measurement is available</doc>
+<tag>core-web-vitals</tag>
+<tag>important</tag>
+<tag>performance</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-01-17T09:46:38.860088" elapsed="0.003902"/>
+</test>
+<test id="s1-s2-t4" name="Test DOM Ready Time Keywords Available" line="36">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.876209" level="INFO">Keyword available: Measure DOM Ready Time</msg>
+<arg>Keyword available: Measure DOM Ready Time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.875870" elapsed="0.000410"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.876809" level="INFO">DOM parsing analysis enabled</msg>
+<arg>DOM parsing analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.876447" elapsed="0.000428"/>
+</kw>
+<doc>Verify DOM ready measurement keywords</doc>
+<tag>dom</tag>
+<tag>parsing</tag>
+<tag>performance</tag>
+<status status="PASS" start="2026-01-17T09:46:38.871416" elapsed="0.005618"/>
+</test>
+<test id="s1-s2-t5" name="Test CPU Profiling Keywords Available" line="43">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.885305" level="INFO">Keyword available: Profile CPU Usage</msg>
+<arg>Keyword available: Profile CPU Usage</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.884950" elapsed="0.000424"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.885799" level="INFO">CPU performance monitoring enabled</msg>
+<arg>CPU performance monitoring enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.885535" elapsed="0.000327"/>
+</kw>
+<doc>Verify CPU profiling keywords are available</doc>
+<tag>cpu</tag>
+<tag>performance</tag>
+<tag>profiling</tag>
+<status status="PASS" start="2026-01-17T09:46:38.881931" elapsed="0.004079"/>
+</test>
+<test id="s1-s2-t6" name="Test Memory Profiling Keywords Available" line="50">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.898348" level="INFO">Keyword available: Profile Memory Usage</msg>
+<arg>Keyword available: Profile Memory Usage</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.897928" elapsed="0.000498"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.898877" level="INFO">Memory usage tracking enabled</msg>
+<arg>Memory usage tracking enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.898604" elapsed="0.000340"/>
+</kw>
+<doc>Verify memory profiling keywords are available</doc>
+<tag>memory</tag>
+<tag>performance</tag>
+<tag>profiling</tag>
+<status status="PASS" start="2026-01-17T09:46:38.892660" elapsed="0.006437"/>
+</test>
+<test id="s1-s2-t7" name="Test JavaScript Performance Keywords Available" line="57">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.906259" level="INFO">Keywords available: Measure JavaScript Execution Time, Benchmark JavaScript Performance</msg>
+<arg>Keywords available: Measure JavaScript Execution Time, Benchmark JavaScript Performance</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.906005" elapsed="0.000302"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.906588" level="INFO">JavaScript performance analysis enabled</msg>
+<arg>JavaScript performance analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.906417" elapsed="0.000211"/>
+</kw>
+<doc>Verify JavaScript performance keywords</doc>
+<tag>execution</tag>
+<tag>javascript</tag>
+<tag>performance</tag>
+<status status="PASS" start="2026-01-17T09:46:38.904261" elapsed="0.002465"/>
+</test>
+<test id="s1-s2-t8" name="Test Asset Load Time Keywords Available" line="64">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.913521" level="INFO">Keyword available: Measure Asset Load Times</msg>
+<arg>Keyword available: Measure Asset Load Times</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.913241" elapsed="0.000400"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.914086" level="INFO">Asset types: CSS, JavaScript, images, fonts</msg>
+<arg>Asset types: CSS, JavaScript, images, fonts</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.913809" elapsed="0.000376"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.914630" level="INFO">Asset performance tracking enabled</msg>
+<arg>Asset performance tracking enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.914352" elapsed="0.000345"/>
+</kw>
+<doc>Verify asset load time measurement keywords</doc>
+<tag>assets</tag>
+<tag>performance</tag>
+<tag>resources</tag>
+<status status="PASS" start="2026-01-17T09:46:38.910935" elapsed="0.003907"/>
+</test>
+<test id="s1-s2-t9" name="Test Rendering Performance Keywords Available" line="72">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.920343" level="INFO">Keyword available: Test Rendering Performance</msg>
+<arg>Keyword available: Test Rendering Performance</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.920105" elapsed="0.000284"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.920666" level="INFO">Metrics: layout_time, paint_time, composite_time</msg>
+<arg>Metrics: layout_time, paint_time, composite_time</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.920495" elapsed="0.000210"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.920956" level="INFO">Rendering analysis enabled</msg>
+<arg>Rendering analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.920799" elapsed="0.000194"/>
+</kw>
+<doc>Verify rendering performance keywords</doc>
+<tag>layout</tag>
+<tag>performance</tag>
+<tag>rendering</tag>
+<status status="PASS" start="2026-01-17T09:46:38.918326" elapsed="0.002760"/>
+</test>
+<test id="s1-s2-t10" name="Test Time To Interactive Keywords Available" line="80">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.926290" level="INFO">Keyword available: Measure Time To Interactive</msg>
+<arg>Keyword available: Measure Time To Interactive</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.926053" elapsed="0.000281"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.926647" level="INFO">TTI measurement enabled</msg>
+<arg>TTI measurement enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.926469" elapsed="0.000218"/>
+</kw>
+<doc>Verify TTI measurement keywords</doc>
+<tag>interactivity</tag>
+<tag>performance</tag>
+<tag>tti</tag>
+<status status="PASS" start="2026-01-17T09:46:38.924317" elapsed="0.002465"/>
+</test>
+<test id="s1-s2-t11" name="Test Animation Performance Keywords Available" line="87">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.932991" level="INFO">Keyword available: Test Animation Performance</msg>
+<arg>Keyword available: Test Animation Performance</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.932705" elapsed="0.000335"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.933362" level="INFO">Metrics: FPS, frame time, jank percentage</msg>
+<arg>Metrics: FPS, frame time, jank percentage</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.933178" elapsed="0.000224"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.933656" level="INFO">Animation performance testing enabled</msg>
+<arg>Animation performance testing enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.933497" elapsed="0.000197"/>
+</kw>
+<doc>Verify animation performance keywords</doc>
+<tag>animation</tag>
+<tag>fps</tag>
+<tag>performance</tag>
+<status status="PASS" start="2026-01-17T09:46:38.930168" elapsed="0.003619"/>
+</test>
+<test id="s1-s2-t12" name="Test Scroll Performance Keywords Available" line="95">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.939168" level="INFO">Keyword available: Measure Scroll Performance</msg>
+<arg>Keyword available: Measure Scroll Performance</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.938886" elapsed="0.000332"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.939500" level="INFO">Scroll and interaction analysis enabled</msg>
+<arg>Scroll and interaction analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.939326" elapsed="0.000214"/>
+</kw>
+<doc>Verify scroll performance keywords</doc>
+<tag>performance</tag>
+<tag>scroll</tag>
+<tag>smoothness</tag>
+<status status="PASS" start="2026-01-17T09:46:38.937022" elapsed="0.002612"/>
+</test>
+<test id="s1-s2-t13" name="Test Network Waterfall Keywords Available" line="102">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.944858" level="INFO">Keyword available: Profile Network Waterfall</msg>
+<arg>Keyword available: Profile Network Waterfall</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.944652" elapsed="0.000250"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.945210" level="INFO">Resource loading sequence analysis enabled</msg>
+<arg>Resource loading sequence analysis enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.945004" elapsed="0.000248"/>
+</kw>
+<doc>Verify network waterfall analysis keywords</doc>
+<tag>network</tag>
+<tag>performance</tag>
+<tag>waterfall</tag>
+<status status="PASS" start="2026-01-17T09:46:38.942902" elapsed="0.002551"/>
+</test>
+<test id="s1-s2-t14" name="Test Performance Comparison Keywords Available" line="109">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.950889" level="INFO">Keyword available: Compare Performance Metrics</msg>
+<arg>Keyword available: Compare Performance Metrics</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.950558" elapsed="0.000407"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.951301" level="INFO">Baseline comparison and regression testing enabled</msg>
+<arg>Baseline comparison and regression testing enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.951089" elapsed="0.000255"/>
+</kw>
+<doc>Verify performance comparison keywords</doc>
+<tag>comparison</tag>
+<tag>performance</tag>
+<tag>regression</tag>
+<status status="PASS" start="2026-01-17T09:46:38.948635" elapsed="0.002807"/>
+</test>
+<test id="s1-s2-t15" name="Test Performance Stress Testing Keywords Available" line="116">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.956705" level="INFO">Keyword available: Stress Test Performance</msg>
+<arg>Keyword available: Stress Test Performance</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.956501" elapsed="0.000249"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.957025" level="INFO">Concurrent user load simulation enabled</msg>
+<arg>Concurrent user load simulation enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.956854" elapsed="0.000210"/>
+</kw>
+<doc>Verify stress testing keywords</doc>
+<tag>load-testing</tag>
+<tag>performance</tag>
+<tag>stress-test</tag>
+<status status="PASS" start="2026-01-17T09:46:38.954714" elapsed="0.002478"/>
+</test>
+<test id="s1-s2-t16" name="Test Long Tasks Monitoring Keywords Available" line="123">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.962271" level="INFO">Keyword available: Monitor Long Tasks</msg>
+<arg>Keyword available: Monitor Long Tasks</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.962028" elapsed="0.000288"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.962591" level="INFO">JavaScript long task detection enabled</msg>
+<arg>JavaScript long task detection enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.962422" elapsed="0.000208"/>
+</kw>
+<doc>Verify long task monitoring keywords</doc>
+<tag>javascript</tag>
+<tag>long-tasks</tag>
+<tag>performance</tag>
+<status status="PASS" start="2026-01-17T09:46:38.960373" elapsed="0.002350"/>
+</test>
+<test id="s1-s2-t17" name="Test Performance Report Generation Keywords Available" line="130">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.967766" level="INFO">Keyword available: Generate Performance Report</msg>
+<arg>Keyword available: Generate Performance Report</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.967559" elapsed="0.000251"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.968081" level="INFO">Comprehensive performance reporting enabled</msg>
+<arg>Comprehensive performance reporting enabled</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.967914" elapsed="0.000205"/>
+</kw>
+<doc>Verify report generation keywords</doc>
+<tag>analysis</tag>
+<tag>performance</tag>
+<tag>reporting</tag>
+<status status="PASS" start="2026-01-17T09:46:38.965769" elapsed="0.002478"/>
+</test>
+<test id="s1-s2-t18" name="Test Core Web Vitals Targets" line="137">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.973397" level="INFO">LCP target: &lt; 2.5s (Good)</msg>
+<arg>LCP target: &lt; 2.5s (Good)</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.973191" elapsed="0.000252"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.973717" level="INFO">FID target: &lt; 100ms (Good)</msg>
+<arg>FID target: &lt; 100ms (Good)</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.973546" elapsed="0.000210"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.974009" level="INFO">CLS target: &lt; 0.1 (Good)</msg>
+<arg>CLS target: &lt; 0.1 (Good)</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.973850" elapsed="0.000196"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.974312" level="INFO">INP target: &lt; 200ms (Good)</msg>
+<arg>INP target: &lt; 200ms (Good)</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.974154" elapsed="0.000194"/>
+</kw>
+<doc>Verify Core Web Vitals targets</doc>
+<tag>core-web-vitals</tag>
+<tag>performance</tag>
+<tag>validation</tag>
+<status status="PASS" start="2026-01-17T09:46:38.971451" elapsed="0.002988"/>
+</test>
+<test id="s1-s2-t19" name="Test Performance Metrics Integration" line="146">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.979706" level="INFO">Load time metrics: Available</msg>
+<arg>Load time metrics: Available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.979505" elapsed="0.000245"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.980018" level="INFO">Paint metrics: Available</msg>
+<arg>Paint metrics: Available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.979853" elapsed="0.000203"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.980523" level="INFO">Core Web Vitals: Available</msg>
+<arg>Core Web Vitals: Available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.980197" elapsed="0.000385"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.980921" level="INFO">JavaScript performance: Available</msg>
+<arg>JavaScript performance: Available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.980711" elapsed="0.000258"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.981319" level="INFO">Memory and CPU: Available</msg>
+<arg>Memory and CPU: Available</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.981090" elapsed="0.000277"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-17T09:46:38.981680" level="INFO">All performance metrics integrated</msg>
+<arg>All performance metrics integrated</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.981486" elapsed="0.000240"/>
+</kw>
+<doc>Verify all performance metrics are integrated</doc>
+<tag>integration</tag>
+<tag>performance</tag>
+<status status="PASS" start="2026-01-17T09:46:38.977695" elapsed="0.004148"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2026-01-17T09:46:38.986375" level="INFO">Performance Testing Complete</msg>
+<arg>Performance Testing Complete</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-17T09:46:38.985998" elapsed="0.000436"/>
+</kw>
+<doc>Performance Testing Test Suite - Demonstration
+Shows performance testing capabilities without actual browser automation</doc>
+<status status="PASS" start="2026-01-17T09:46:38.830955" elapsed="0.155545"/>
+</suite>
+<status status="PASS" start="2026-01-17T09:46:38.181517" elapsed="0.809916"/>
+</suite>
+<statistics>
+<total>
+<stat pass="29" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">advanced</stat>
+<stat pass="1" fail="0" skip="0">analysis</stat>
+<stat pass="1" fail="0" skip="0">animation</stat>
+<stat pass="1" fail="0" skip="0">api</stat>
+<stat pass="1" fail="0" skip="0">assets</stat>
+<stat pass="1" fail="0" skip="0">cache</stat>
+<stat pass="1" fail="0" skip="0">comparison</stat>
+<stat pass="2" fail="0" skip="0">core-web-vitals</stat>
+<stat pass="1" fail="0" skip="0">cpu</stat>
+<stat pass="1" fail="0" skip="0">diagnostics</stat>
+<stat pass="1" fail="0" skip="0">dom</stat>
+<stat pass="1" fail="0" skip="0">errors</stat>
+<stat pass="1" fail="0" skip="0">execution</stat>
+<stat pass="1" fail="0" skip="0">fps</stat>
+<stat pass="1" fail="0" skip="0">har</stat>
+<stat pass="1" fail="0" skip="0">headers</stat>
+<stat pass="1" fail="0" skip="0">important</stat>
+<stat pass="1" fail="0" skip="0">integration</stat>
+<stat pass="1" fail="0" skip="0">interactivity</stat>
+<stat pass="2" fail="0" skip="0">javascript</stat>
+<stat pass="1" fail="0" skip="0">layout</stat>
+<stat pass="1" fail="0" skip="0">load-testing</stat>
+<stat pass="1" fail="0" skip="0">load-time</stat>
+<stat pass="1" fail="0" skip="0">long-tasks</stat>
+<stat pass="1" fail="0" skip="0">memory</stat>
+<stat pass="11" fail="0" skip="0">network</stat>
+<stat pass="1" fail="0" skip="0">optimization</stat>
+<stat pass="1" fail="0" skip="0">paint</stat>
+<stat pass="1" fail="0" skip="0">parsing</stat>
+<stat pass="20" fail="0" skip="0">performance</stat>
+<stat pass="2" fail="0" skip="0">profiling</stat>
+<stat pass="1" fail="0" skip="0">recording</stat>
+<stat pass="1" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">rendering</stat>
+<stat pass="1" fail="0" skip="0">reporting</stat>
+<stat pass="1" fail="0" skip="0">resilience</stat>
+<stat pass="1" fail="0" skip="0">resources</stat>
+<stat pass="1" fail="0" skip="0">scroll</stat>
+<stat pass="1" fail="0" skip="0">security</stat>
+<stat pass="7" fail="0" skip="0">smoke</stat>
+<stat pass="1" fail="0" skip="0">smoothness</stat>
+<stat pass="1" fail="0" skip="0">stress-test</stat>
+<stat pass="1" fail="0" skip="0">throttling</stat>
+<stat pass="1" fail="0" skip="0">tti</stat>
+<stat pass="1" fail="0" skip="0">validation</stat>
+<stat pass="1" fail="0" skip="0">waterfall</stat>
+<stat pass="1" fail="0" skip="0">websocket</stat>
+</tag>
+<suite>
+<stat name="Network Demo &amp; Performance Demo" id="s1" pass="29" fail="0" skip="0">Network Demo &amp; Performance Demo</stat>
+<stat name="Network Demo" id="s1-s1" pass="10" fail="0" skip="0">Network Demo &amp; Performance Demo.Network Demo</stat>
+<stat name="Performance Demo" id="s1-s2" pass="19" fail="0" skip="0">Network Demo &amp; Performance Demo.Performance Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
