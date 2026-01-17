@@ -1,0 +1,528 @@
+(node:55006) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2026-01-17T09:46:38.729Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Listening on 33529"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.765Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.765Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.768Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.768Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.773Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.773Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.775Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.775Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.780Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.781Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.783Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.783Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.787Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.787Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.789Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.789Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.793Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.793Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.796Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.796Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.799Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.799Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.801Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.801Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.806Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.806Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.808Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.808Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.812Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.812Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.814Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.814Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.819Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.819Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.820Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.821Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.825Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.825Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.829Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.829Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.845Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.845Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.848Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.848Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.852Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.852Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.854Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.854Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.859Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.859Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.861Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.861Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.867Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.867Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.874Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.874Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.880Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.881Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.883Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.884Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.890Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.890Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.895Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.895Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.903Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.903Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.905Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.905Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.909Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.910Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.912Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.912Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.917Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.917Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.919Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.919Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.923Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.923Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.925Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.925Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.929Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.929Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.931Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.931Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.936Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.936Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.938Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.938Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.942Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.942Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.943Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.943Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.947Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.947Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.949Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.949Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.953Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.953Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.955Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.955Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.959Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.959Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.961Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.961Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.964Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.965Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.966Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.966Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.970Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.970Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.972Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.972Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.976Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.976Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.978Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.978Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.984Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.984Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10982:15)
+    at PlaywrightServer.getActiveBrowser (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11598:59)
+    at PlaywrightServer.setTimeout (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11837:57)
+    at Object.onReceiveHalfClose (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (/home/codespace/.cache/pypoetry/virtualenvs/openrobo-web-framework-mLEc0NXE-py3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+=============================================================
+{"level":30,"time":"2026-01-17T09:46:38.989Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:38.990Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-17T09:46:39.036Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-17T09:46:39.037Z","pid":55006,"hostname":"codespaces-3e4b3e","msg":"End of node method closeAllBrowsers"}

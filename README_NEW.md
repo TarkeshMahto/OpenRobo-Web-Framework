@@ -2,14 +2,14 @@
 
 A professional, production-ready **Robot Framework** with advanced **robotframework-browser** capabilities for web automation, API testing, and desktop automation.
 
-**Author:** Tarkeshwar Kumar Mahto  
-**License:** MIT
+**Author:** Tarkeshwar Kumar Mahto
 
 ## 🚀 Features
 
 ### Core Capabilities
 - ✅ **Web UI Automation** with robotframework-browser (Chromium, Firefox, WebKit)
 - ✅ **API Testing** with robotframework-requests
+- ✅ **Desktop Automation** with robotframework-imagehorizonlibrary
 - ✅ **Organized Project Structure** with reusable keywords and configurations
 
 ### Advanced Browser Features
@@ -24,11 +24,6 @@ A professional, production-ready **Robot Framework** with advanced **robotframew
 9. **Performance Monitoring** - Measure load times and metrics
 10. **Multi-Browser Testing** - Test across all major browsers
 
-### Network & Performance Testing
-- **20 Network Testing Keywords** - Request monitoring, throttling, API testing, error handling
-- **22 Performance Testing Keywords** - Core Web Vitals, metrics, profiling, stress testing
-- **Comprehensive Test Suites** - `tests/network/` and `tests/performance/` directories
-
 ---
 
 ## 📋 Quick Start
@@ -36,16 +31,17 @@ A professional, production-ready **Robot Framework** with advanced **robotframew
 ### 1. Install Dependencies
 ```bash
 poetry install
+poetry shell
 ```
 
 ### 2. Initialize Browser Library
 ```bash
-poetry run rfbrowser init
+rfbrowser init
 ```
 
 ### 3. Run Your First Test
 ```bash
-poetry run robot --outputdir results tests/smoke/amazon_search.robot
+robot tests/smoke/amazon_search.robot
 ```
 
 ### 4. View Results
@@ -65,21 +61,16 @@ openrobo-web-framework/
 │   │   ├── environments.robot      # Dev/Staging/Prod configs
 │   │   └── locators.robot          # Element selectors
 │   ├── keywords/
-│   │   ├── common.robot            # Advanced feature keywords (10 features)
-│   │   ├── network.robot           # Network testing keywords (20+ keywords)
-│   │   ├── performance.robot       # Performance testing keywords (22+ keywords)
+│   │   ├── common.robot            # Advanced feature keywords
 │   │   └── amazon.robot            # Application-specific keywords
 │   └── libraries/                  # Custom Python libraries
 ├── tests/
 │   ├── smoke/                      # Quick tests (2-5 min)
-│   ├── network/                    # Network testing test suites (10 demo + full tests)
-│   ├── performance/                # Performance testing suites (19 demo + full tests)
 │   ├── regression/                 # Full test suite
 │   └── advanced/                   # Advanced features demo
 ├── results/                        # Test outputs (auto-created)
 ├── pyproject.toml                  # Poetry dependencies
 ├── robot.ini                       # Robot Framework config
-├── NETWORK_PERFORMANCE.md          # Network & Performance Testing Guide
 ├── ADVANCED_FEATURES.md            # Advanced features guide
 ├── QUICKSTART.md                   # Quick start guide
 └── CONTRIBUTING.md                 # Contributing guidelines
@@ -92,48 +83,24 @@ openrobo-web-framework/
 ### Run Tests
 ```bash
 # All tests
-poetry run robot tests/
+robot tests/
 
 # Smoke tests only
-poetry run robot tests/smoke/
-
-# Network tests
-poetry run robot tests/network/
-
-# Performance tests
-poetry run robot tests/performance/
-
-# Regression tests
-poetry run robot tests/regression/
+robot tests/smoke/
 
 # With specific browser
-poetry run robot -v BROWSER_TYPE:firefox tests/
+robot -v BROWSER_TYPE:firefox tests/
 
 # Headless mode
-poetry run robot -v HEADLESS:True tests/
+robot -v HEADLESS:True tests/
 
 # With video recording
-poetry run robot tests/advanced/advanced_features.robot
-```
-
-### Run Specific Test Suites
-```bash
-# Network demo tests (quick verification)
-poetry run robot tests/network/network_demo.robot
-
-# Performance demo tests (quick verification)
-poetry run robot tests/performance/performance_demo.robot
-
-# Network tests with specific tag
-poetry run robot -i throttling tests/network/
-
-# Performance tests with specific tag
-poetry run robot -i core-web-vitals tests/performance/
+robot tests/advanced/advanced_features.robot
 ```
 
 ### Generate Reports
 ```bash
-poetry run robot --outputdir results tests/
+robot --outputdir results tests/
 # Reports: results/report.html, results/log.html
 ```
 
@@ -142,8 +109,7 @@ poetry run robot --outputdir results tests/
 ## 📚 Documentation
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes
-- **[NETWORK_PERFORMANCE.md](NETWORK_PERFORMANCE.md)** - Network & Performance Testing Guide (comprehensive!)
-- **[ADVANCED_FEATURES.md](ADVANCED_FEATURES.md)** - Detailed advanced features guide
+- **[ADVANCED_FEATURES.md](ADVANCED_FEATURES.md)** - Detailed feature guide
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Development guidelines
 
 ---
@@ -172,14 +138,39 @@ ${ADD_TO_CART}      id=add-to-cart-button
 ### Basic Test
 ```robot
 *** Settings ***
-Library          Browser
+Resource    ../config/base.robot
+Resource    ../keywords/amazon.robot
+
+Suite Setup      Open Browser With Advanced Features    https://amazon.com
+Suite Teardown   Close Browser With Cleanup
 
 *** Test Cases ***
-My First Test
-    Open Browser    https://example.com    chromium
-    Type Text       id=search    test query
-    Click           id=search-button
-    Close Browser
+Search And Add To Cart
+    Search For Product    MacBook Pro
+    Click First Product In Results
+    Add Current Product To Cart
+```
+
+### Advanced Features
+```robot
+Test With Network Recording
+    Open Browser With Advanced Features
+    ...    record_video=True
+    ...    record_har=True
+    ...    record_trace=False
+    
+    Search For Product    Laptop
+    # Network traffic captured automatically
+```
+
+### Mobile Testing
+```robot
+Test Mobile Device
+    New Browser    browser=chromium
+    New Context
+    New Page    url=https://amazon.com
+    Set Viewport Size    375    667
+    # Test on mobile viewport
 ```
 
 ---
@@ -191,20 +182,6 @@ My First Test
 - 2-5 minute execution
 - Example: `amazon_search.robot`
 
-### Network Tests (`tests/network/`)
-- Network functionality testing
-- API endpoint validation
-- Network throttling and failure scenarios
-- Examples: `network_demo.robot`, `network_tests.robot`
-- 20+ network testing keywords
-
-### Performance Tests (`tests/performance/`)
-- Performance metrics measurement
-- Core Web Vitals validation
-- Load testing and stress testing
-- Examples: `performance_demo.robot`, `performance_tests.robot`
-- 22+ performance testing keywords
-
 ### Regression Tests (`tests/regression/`)
 - Full test suite
 - 30-60 minute execution
@@ -212,7 +189,8 @@ My First Test
 
 ### Advanced Tests (`tests/advanced/`)
 - Feature demonstrations
-- All 10 advanced Browser features
+- Performance tests
+- Network tests
 - Example: `advanced_features.robot`
 
 ---
@@ -241,7 +219,7 @@ My First Test
 
 4. **Run Tests**
    ```bash
-   poetry run robot tests/smoke/myapp_test.robot
+   robot tests/smoke/myapp_test.robot
    ```
 
 ---
@@ -250,12 +228,12 @@ My First Test
 
 ### Browser Won't Start
 ```bash
-poetry run rfbrowser init
+rfbrowser init
 ```
 
 ### Tests Timeout
 ```bash
-poetry run robot -v TIMEOUT:60s tests/
+robot -v TIMEOUT:60s tests/
 ```
 
 ### Video Not Recording
@@ -297,4 +275,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
 ---
 
-**Ready to automate? Start with the [QUICKSTART.md](QUICKSTART.md)! 🚀** 
+**Ready to automate? Start with the [QUICKSTART.md](QUICKSTART.md)! 🚀**
